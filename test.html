@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>d3.js</h1>
+        <div id="ttt"></div>
+        <script type="module">
+            import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+            // d3.csv('https://github.com/thephpleague/csv/blob/master/test_files/prenoms.csv', function(error, data) {
+            //   if (error) throw error;
+            //   console.log(data);
+            // });
+            d3.csv('alphabet.csv', function(error, data) {
+              if (error) throw error;
+              console.log(data);
+            });
+        </script>
+    </div>
+</body>
+</html>
